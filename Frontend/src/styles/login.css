@@ -1,0 +1,22 @@
+.body{
+    margin: 0;
+    height: 100vh;
+    background: rgb(113, 113, 113);
+    outline: auto;
+    display: flex;
+}
+.login-container{
+    width: 800px;
+    height: 60%;
+    border-radius: 1em;
+    margin: auto;
+    background-color: white;
+
+}
+.login-container img{
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    object-fit: cover;
+}
