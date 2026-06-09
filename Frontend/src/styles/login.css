@@ -1,31 +1,175 @@
-.body{
+* {
     margin: 0;
-    height: 100vh;
-    background: rgb(113, 113, 113);
-    outline: auto;
-    display: flex;
+    padding: 0;
+    box-sizing: border-box;
 }
-.login-container{
-    width: 800px;
-    height: 60%;
-    border-radius: 1em;
-    margin: auto;
-    background-color: white;
-    display: flex;   
-}
-.login-container img{
+
+.body {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f7f7f4, #ece7e7);
 }
-.image{
-    width: 60%;
+
+.login-container {
+    width: 950px;
+    height: 560px;
+
+    display: flex;
+    background: white;
+
+    border-radius: 1.5rem;
+    overflow: hidden;
+
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Register mode */
+.register-mode {
+    height: 570px;
+}
+
+.image {
+    width: 55%;
     height: 100%;
 }
 
-.login-credentials{
-    width: 40%;
+.image img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+
+.login-credentials {
+    width: 45%;
+    height: 100%;
+
+    padding: 2rem;
+    position: relative;
+}
+
+.credentials {
+    padding-bottom: 110px;
+}
+
+.credentials h1 {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.register-mode .credentials h1 {
+    font-size: 2.5rem;
+}
+
+.credentials p {
+    color: #9a9a9a;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+}
+
+.name,
+.password {
+    background: #f6f6f6;
+    border-radius: 1rem;
+
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.9rem;
+}
+
+.register-mode .name,
+.register-mode .password {
+    margin-bottom: 0.7rem;
+}
+
+.name label,
+.password label {
+    display: block;
+
+    color: #a9a9a9;
+    font-size: 0.9rem;
+
+    margin-bottom: 0.4rem;
+}
+
+.credentials input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+}
+
+.credentials input:focus {
+    outline: none;
+}
+
+.credentials a {
+    color: #666;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.credentials a:hover {
+    text-decoration: underline;
+}
+
+/* Bottom section */
+
+.login-register {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-register div {
+    padding-left: 2rem;
+}
+
+.login-register div p {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.login-register div a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register div a:hover {
+    color: #ef8d42;
+}
+
+.login-register button {
+    width: 42%;
+    height: 100%;
+
+    border: none;
+
+    background: #ef8d42;
+
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-top-left-radius: 1.4rem;
+}
+
+.login-register button:hover {
+    background: #e57f31;
 }
