@@ -1,12 +1,14 @@
-import React from 'react'
-import LoginRegister from './pages/LoginRegister'
+import { Routes, Route } from "react-router-dom";
+import LoginRegister from "./pages/LoginRegister";
+import Home from "./pages/Home";
 
-const App = () => {
+function App() {
   return (
-    <div>
-      <LoginRegister/>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<LoginRegister />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
