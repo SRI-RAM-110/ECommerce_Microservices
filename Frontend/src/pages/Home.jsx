@@ -48,7 +48,6 @@ function Home() {
                 <h2>Featured Products</h2>
 
                 <div className="product-container">
-
                     {
                         products.map((product) => (
                             <ProductCard
@@ -57,7 +56,6 @@ function Home() {
                             />
                         ))
                     }
-
                 </div>
 
             </section>
